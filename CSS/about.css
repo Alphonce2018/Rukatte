@@ -1,0 +1,93 @@
+.about-hero{
+    height: 80vh;
+    background-image: url(/images/About/uwanja.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-text{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    font-size: 110px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.about-text p{
+    text-align: center;
+}
+
+.about-container{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.about-section{
+    background-color: rgb(59, 59, 247);
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.about-upper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    border: #fff 1px solid;
+    gap: 10px;
+    padding: 4%;    
+    align-items: center;
+    justify-content: center;
+}
+
+.about-down{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    border: #fff 1px solid;
+    gap: 10px;
+    padding: 4%; 
+    margin-top: 20px;
+}
+
+.about-down img{
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
+.about-upper img{
+    aspect-ratio: 1/1;
+}
+
+.about-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.active{
+   font-weight: 600;
+   text-shadow: 4px 2px #000;
+   font-size: 1.2em;
+
+}
+
+ /* Media query for small screens (phones) */
+ @media only screen and (max-width: 600px) {
+    /* font-size: 14px; */
+  .about-text{
+        font-size: 60px;
+    }
+
+  }
+  
+  /* Media query for medium screens (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+     /* font-size: 14px; */
+   .about-text{
+        font-size: 80px;
+    }
+}
